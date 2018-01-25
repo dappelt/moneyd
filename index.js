@@ -56,6 +56,7 @@ const connector = Connector.createApp({
         settleThreshold: '-Infinity'
       },
       options: {
+        host: 'localhost',
         port: 7768
       }
     }

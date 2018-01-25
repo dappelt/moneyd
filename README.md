@@ -15,7 +15,7 @@ your computer to use funds on the _live_ ILP network.
 It works by creating a payment channel to an Interledger connector, and then
 running `ilp-plugin-mini-accounts` locally. Any plugin can connect to this
 mini-accounts instance by generating a random secret and authenticating via BTP
-to `localhost:7768`.
+to `localhost:7768`. By default, only connections from localhost are accepted.
 
 The `ilp-plugin` repo is already designed to do this, so `ilp-curl` and many
 other tools will work right out of the box.
@@ -76,7 +76,7 @@ moneyd settle --secret "s..." --parent "example.com" --amount 1000
 ```
 
 You can adjust the amount if you need to reconcile more. The amount is
-represented in XRP drops; 1000000 is a single XRP so these amounts are
+represented in XRP drops; 1.000.000 is a single XRP so these amounts are
 typically kept quite small.
 
 ## Try it out
